@@ -38,40 +38,69 @@
     </nav>
 
     <!-- Main Content -->
-    <main class="flex-grow py-20 bg-white">
+    <main class="flex-grow py-20 bg-white min-h-screen">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 class="text-4xl font-bold text-gray-900 mb-2">Privacy Policy</h1>
-            <p class="text-gray-500 mb-8 border-b pb-6">Last updated: <span id="date-display"></span></p>
+            <p class="text-gray-500 mb-8 border-b pb-6">Last updated: <span id="date-display">November 22, 2025</span></p>
             
             <div class="prose prose-emerald max-w-none text-gray-600 leading-relaxed">
-                <p class="mb-6">At <strong>Barakah Apps</strong>, we recognize that privacy is of utmost importance. This document outlines the types of personal information we receive and collect when you use our services, as well as some of the steps we take to safeguard information.</p>
+                <p class="mb-6">
+                    This Privacy Policy describes how <strong>[Your Developer Name/Company Name]</strong> ("we," "us," or "our") collects, uses, and discloses information when you use our mobile application, <strong>Qibla Finder Offline</strong> (the "Service").
+                </p>
+                <p class="mb-6">
+                    We are committed to protecting your privacy. This app is designed to function primarily offline and prioritizes user privacy by minimizing data collection.
+                </p>
                 
-                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Information Collection and Use</h3>
-                <p class="mb-4">For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained on your device and is not collected by us in any way.</p>
-                <p class="mb-4">The app does use third-party services that may collect information used to identify you. Links to privacy policy of third-party service providers used by the app:</p>
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">1. Information We Collect and Use</h3>
+                <p class="mb-4">The primary function of this application is to help users determine the direction of the Qibla (Kaaba) for prayer. To perform this calculation accurately, the app requires specific permissions.</p>
+
+                <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 my-6">
+                    <h4 class="text-xl font-bold text-gray-800 mb-4">A. Location Data (The Specifics)</h4>
+                    
+                    <p class="mb-2"><strong class="text-gray-900">Permission Required:</strong> <code class="bg-gray-200 px-1 py-0.5 rounded text-sm">ACCESS_FINE_LOCATION</code> and <code class="bg-gray-200 px-1 py-0.5 rounded text-sm">ACCESS_COARSE_LOCATION</code></p>
+
+                    <p class="mb-2"><strong class="text-gray-900">Why we need it:</strong> To calculate the accurate Qibla direction, the app needs to know your current geographical coordinates (Latitude and Longitude). The direction of the Qibla varies entirely depending on where you are standing on the Earth.</p>
+
+                    <p class="mb-2"><strong class="text-gray-900">How we use it:</strong></p>
+                    <ul class="list-disc pl-6 mb-4 space-y-1">
+                        <li><strong>Local Processing:</strong> Your location data is retrieved directly from your device's GPS hardware.</li>
+                        <li><strong>Purpose:</strong> This data is used <strong>solely</strong> to perform a mathematical calculation (using geodesic algorithms) to determine the angle between your device and Mecca.</li>
+                        <li><strong>No Storage or Transmission:</strong> We <strong>do not</strong> store your location history, and we <strong>do not</strong> transmit your location coordinates to any external server. The location data stays on your device and is discarded from memory as soon as the calculation is complete or the app is closed.</li>
+                    </ul>
+                </div>
+
+                <h4 class="text-xl font-bold text-gray-900 mt-6 mb-2">B. Device Information</h4>
+                <p class="mb-4">We may collect non-personal device information (such as Android version or device model) solely for the purpose of app stability and compatibility checking. This is handled automatically by the Android operating system.</p>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. Third-Party Services</h3>
+                <p class="mb-4">While our app is designed to be "Offline," it is built within the Android ecosystem. We may employ third-party companies and individuals to facilitate our Service, provide the Service on our behalf, or assist us in analyzing how our Service is used (e.g., Google Play Console crash reporting).</p>
+                <p class="mb-4">Links to privacy policy of third-party service providers used by the app:</p>
                 <ul class="list-disc pl-6 mb-4 space-y-1">
                     <li><a href="https://www.google.com/policies/privacy/" target="_blank" class="text-emerald-600 hover:underline">Google Play Services</a></li>
-                    <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" class="text-emerald-600 hover:underline">AdMob</a></li>
-                    <li><a href="https://firebase.google.com/policies/analytics" target="_blank" class="text-emerald-600 hover:underline">Firebase Analytics</a></li>
                 </ul>
 
-                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">2. Log Data</h3>
-                <p class="mb-4">We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</p>
-                
-                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">3. Location Information</h3>
-                <p class="mb-4">Some of our applications (such as Prayer Times or Qibla Finder) require access to your device's location to function correctly. This location data is processed locally on your device to calculate prayer times or direction. We do not transmit your location history to our servers.</p>
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">3. Data Retention Policy</h3>
+                <p class="mb-4">Since strictly "offline" functionality is our core feature regarding location:</p>
+                <ul class="list-disc pl-6 mb-4 space-y-1">
+                    <li>We do not retain your Location Data.</li>
+                    <li>We do not maintain a database of user profiles.</li>
+                </ul>
 
-                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">4. Cookies</h3>
-                <p class="mb-4">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory. Our Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services.</p>
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">4. Security</h3>
+                <p class="mb-4">We value your trust in providing us your Personal Information. However, remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security. Since this app processes critical data (Location) locally, the security relies largely on the security of your own mobile device.</p>
 
-                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Security</h3>
-                <p class="mb-4">We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
-
-                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Children’s Privacy</h3>
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">5. Children’s Privacy</h3>
                 <p class="mb-4">These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers.</p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">6. Changes to This Privacy Policy</h3>
+                <p class="mb-4">We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
 
                 <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">7. Contact Us</h3>
-                <p class="mb-4">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:support@barakahapps.com" class="text-emerald-600 font-bold">support@barakahapps.com</a>.</p>
+                <p class="mb-4">If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
+                <ul class="list-disc pl-6 mb-4 space-y-1">
+                    <li><strong>Developer Name:</strong> [Your Name Here]</li>
+                    <li><strong>Email:</strong> <a href="mailto:support@email.com" class="text-emerald-600 hover:underline">[Your Email Address Here]</a></li>
+                </ul>
             </div>
         </div>
     </main>
